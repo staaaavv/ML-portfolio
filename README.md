@@ -10,8 +10,7 @@ This project explores a methodology for analyzing OBD-II data to predict critica
 - Selected **8 vehicle sensors** from OBD-II data  
 - Preprocessed and normalized data using **MATLAB** for Autoencoder input  
 - Dataset prepared to highlight meaningful patterns while reducing noise
-- Sample file: `data/exp3_4drivers_1car_1routeNEW.xlsx`
-
+- Sample file: [exp3_4drivers_1car_1routeNEW.csv](ML-portfolio/exp3_4drivers_1car_1routeNEW.csv)
 ---
 
 • **Model Architecture & Training**
@@ -53,7 +52,7 @@ This project explores a methodology for analyzing OBD-II data to predict critica
 ---
 
 • **How to Use**
-1. Open MATLAB project/notebook (`.mlx`)  
+1. Open MATLAB project 
 2. Load OBD-II dataset: [exp3_4drivers_1car_1routeNEW.csv](ML-portfolio/exp3_4drivers_1car_1routeNEW.csv)
 3. Run training scripts to train the Autoencoder  
 4. Apply reconstruction to detect anomalies  
