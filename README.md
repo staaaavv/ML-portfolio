@@ -1,48 +1,65 @@
 # ML-portfolio
-# Machine Learning Portfolio
-
 # Vehicle Fault Prediction & Anomaly Detection using Autoencoders
 
 **Project Overview:**  
-This project aims to predict potential vehicle faults and detect anomalies using data collected from OBD2 diagnostics. Using **MATLAB** and **Autoencoders**, we trained a model to identify unusual patterns in vehicle sensor data that may indicate faults.
+This project explores a methodology for analyzing OBD-II data to predict critical vehicle parameters affecting performance and reliability. Using **artificial intelligence** and **machine learning**, the system automates fault diagnosis and anomaly detection through an **Autoencoder neural network**.
 
 ---
 
-## 🔹 Dataset
-- Data collected via **OBD2 diagnostic tools** from various vehicles
-- Includes sensor readings, error codes, and operational parameters
-- Preprocessed and normalized for model training
+• **Dataset & Preprocessing**
+- Selected **8 vehicle sensors** from OBD-II data  
+- Preprocessed and normalized data using **MATLAB** for Autoencoder input  
+- Dataset prepared to highlight meaningful patterns while reducing noise
 
 ---
 
-## 🔹 Approach
-- Built and trained an **Autoencoder** in MATLAB to learn normal behavior of vehicle systems
-- Applied the trained model to detect deviations (anomalies) indicating potential faults
-- Used reconstruction error as a metric to flag abnormal readings
+• **Model Architecture & Training**
+- **Autoencoder** with **20 neurons** in the hidden layer  
+- **Regularization techniques:**  
+  - L2 to prevent overfitting  
+  - Sparsity regularization to focus on key features  
+  - Sparsity proportion to control active neurons in the hidden layer  
+- **Decoder transfer function:** `purelin` for reconstructing continuous values  
+- **Training algorithm:** `trainscg` (scaled conjugate gradient)  
+- **Training epochs:** 400 to learn normal data distribution  
 
 ---
 
-## 🔹 Technologies & Tools
-- **Programming / Modeling:** MATLAB  
-- **Machine Learning:** Autoencoders (Unsupervised Learning)  
-- **Data Processing:** Normalization, Feature Selection  
+• **Anomaly Detection**
+- Reconstructed sensor data using the trained autoencoder  
+- Calculated **reconstruction error (MSE)**  
+- Defined anomaly threshold based on MSE  
+- Compared original and reconstructed data  
+- Visualized results through plots showing:  
+  - MSE distribution  
+  - Detected anomalies  
+  - Original vs reconstructed data  
 
 ---
 
-## 🔹 Key Highlights
-- Developed a predictive model for fault detection
-- Anomaly detection for real-time monitoring of vehicle health
-- Demonstrates practical application of ML in automotive diagnostics
+• **Key Highlights**
+- Successfully detected deviations in sensor readings  
+- Related anomalies to OBD-II fault codes and sensor specifications  
+- Methodology can be extended to other OBD-II parameters, enhancing predictive maintenance capabilities
 
 ---
 
-## 🔹 How to Run
-1. Open the MATLAB project/notebook (`.mlx`)  
-2. Load the dataset (`data/` folder)  
-3. Run the training and evaluation scripts  
-4. Check the reconstruction error to identify anomalies  
+• **Technologies & Tools**
+- **MATLAB** for preprocessing, training, and analysis  
+- **Autoencoder Neural Networks**  
+- Data visualization and evaluation techniques for fault prediction
 
 ---
 
-## 🔹 Contact
+• **How to Use**
+1. Open MATLAB project/notebook (`.mlx`)  
+2. Load OBD-II dataset (`data/` folder)  
+3. Run training scripts to train the Autoencoder  
+4. Apply reconstruction to detect anomalies  
+5. Review MSE plots and anomaly reports
+
+---
+
+• **Contact**
 For questions or collaboration, feel free to reach out via GitHub or Upwork.
+
