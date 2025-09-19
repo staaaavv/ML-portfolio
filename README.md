@@ -65,3 +65,7 @@ This project explores a methodology for analyzing OBD-II data to predict critica
 • **Results**
 - Anomaly Detection: [Data Comparison & Visualizations](RESULTS/rpm.jpg)
 - Original and Reconstructed Data: [Tables](RESULTS/tables.jpg)
+
+  <a href="https://github.com/username/ML-portfolio" target="_blank">
+  <img src="images/mse_plot.jpg" alt="MSE Plot" width="600"/>
+</a>
