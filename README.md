@@ -61,6 +61,3 @@ This project explores a methodology for analyzing OBD-II data to predict critica
 
 ---
 
-• **Contact**
-For questions or collaboration, feel free to reach out via GitHub or Upwork.
-
