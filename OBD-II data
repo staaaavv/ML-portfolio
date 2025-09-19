@@ -1,2 +1,22 @@
- data/                                      # Φάκελος για τα OBD-II δεδομένα
- exp3_4drivers_1car_1routeNEW.xlsx          # Παράδειγμα ή δείγμα δεδομένων
+autoencoder_fault_detection_obd2/
+│
+├── README.md                # Η περιγραφή του project που μόλις φτιάξαμε
+├── data/                    # Φάκελος για τα OBD-II δεδομένα
+│   └── dataset.csv          # Παράδειγμα ή δείγμα δεδομένων
+│
+├── notebooks/               # Jupyter ή MATLAB notebooks
+│   └── training_notebook.mlx
+│   └── analysis_notebook.mlx
+│
+├── scripts/                 # Scripts με τον κώδικα για Autoencoder
+│   └── preprocess.m
+│   └── train_autoencoder.m
+│   └── detect_anomalies.m
+│
+├── images/                  # Διαγράμματα, screenshots, plots
+│   └── mse_plot.png
+│   └── anomaly_detection_plot.png
+│
+└── results/                 # Αποτελέσματα μοντέλου (προαιρετικό)
+    └── reconstructed_data.csv
+    └── anomaly_flags.csv
